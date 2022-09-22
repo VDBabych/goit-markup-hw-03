@@ -22,6 +22,12 @@ ul, h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .list {
     list-style: none;
 }
@@ -43,12 +49,19 @@ ul, h1, h2, h3, h4, h5, h6, p {
     padding: 0 15px;    
 }
 
-.page-header .container {
-    display: flex;
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.page-header {
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.page-header .container {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
@@ -64,6 +77,10 @@ ul, h1, h2, h3, h4, h5, h6, p {
 
 .logo-accent {
     color: var(--accent-color);
+}
+
+.contacts.list {
+    margin-left: auto;
 }
 
 .site-nav .nav-item:not(:last-child) {
@@ -116,13 +133,11 @@ ul, h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-section {
-    background-color: var(--secondary-bg-color);
-}
-
-.hero-section .container {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+
+    background-color: var(--secondary-bg-color);
 }
 
 .hero {
@@ -153,11 +168,6 @@ ul, h1, h2, h3, h4, h5, h6, p {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-}
-
-.feature-section .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .feature-list .item {
@@ -193,8 +203,8 @@ ul, h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
-.work-section .container {
-    padding-bottom: 94px;
+.work-section {
+    padding-top: 0;
 }
 
 .work-section .section-title {
@@ -222,16 +232,12 @@ ul, h1, h2, h3, h4, h5, h6, p {
     background-color: var(--primary-white-color);
 }
 
-.team-section .container {
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-
 .team-card .card-title {
     margin-top: 30px;
 
     color: var(--title-text-color);
 
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
     text-align: center;
@@ -245,12 +251,10 @@ ul, h1, h2, h3, h4, h5, h6, p {
 }
 
 .page-footer {
-    background-color: var(--secondary-bg-color);
-}
-
-.page-footer .container {
     padding-bottom: 60px;
     padding-top: 60px;
+
+    background-color: var(--secondary-bg-color);
 }
 
 .page-footer .logo {
@@ -280,11 +284,6 @@ ul, h1, h2, h3, h4, h5, h6, p {
     line-height: 1.71;    
 }
 
-.projects-section .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 /* тимчасове рішення */
 .projects-section h1,
 .feature-section h2 {
@@ -311,13 +310,14 @@ ul, h1, h2, h3, h4, h5, h6, p {
 }
 
 .work-list .work-card {
-    width: 370px;
-    
-    border: #EEEEEE 1px solid;
+    width: 370px;    
 }
 
 .work-list .wrapper {
     padding: 20px 24px;
+
+    border: var(--border-color) 1px solid;
+    border-top: none;
 }
 
 .work-card .card-title {
