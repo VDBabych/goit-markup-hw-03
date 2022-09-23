@@ -227,14 +227,13 @@ img {
     margin-right: 30px;
 }
 
-.team-card {
+.team-card .wrapper {
+    padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--primary-white-color);
 }
 
 .team-card .card-title {
-    margin-top: 30px;
-
     color: var(--title-text-color);
 
     font-size: 16px;
